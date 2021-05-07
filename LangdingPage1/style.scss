@@ -14,7 +14,7 @@ $fontmenu: font-weight 500, font-size 14px;
 // Header
 
 .Hero {
-  width: 100%;
+  width: 1440px;
   left: 0;
   top: 0;
   position: static;
@@ -31,14 +31,12 @@ $fontmenu: font-weight 500, font-size 14px;
       display: flex;
       padding: 0px;
       flex-direction: row;
-      flex-wrap: wrap;
       margin-left: 10px;
       margin-top: 22px;
       align-items: center;
-    
       .logopage {
         width: 110px;
-        margin: 5px 32px;
+        margin: px 32px;
         align-items: center;
       }
       .menu {
@@ -50,31 +48,20 @@ $fontmenu: font-weight 500, font-size 14px;
           padding: 10px 20px;
           a {
             color: $colorfont;
-            cursor: pointer;
             font-size: 16px;
             font-weight: 500;
             font-style: normal;
             text-decoration: none;
           }
-          a:hover{
-           border-bottom: 1px solid #8c30f5; 
-          }
         }
       }
-      
-      // Mobile break piont
-     
-     
     }
-    
     .nav-right {
       margin-left: 150px;
       margin-top: 30px;
-     
       .download {
         width: 120px;
       }
-    
     }
   }
   &-content {
@@ -86,14 +73,14 @@ $fontmenu: font-weight 500, font-size 14px;
     height: 100%;
     &-title {
       margin-top: 8rem;
-      .titlehead {
+      h1 {
         font-size: 72px;
         margin: 25px 0;
         line-height: 68px;
       }
       .btn {
         background-color: $colorbutton;
-        padding: 15px 60px;
+        padding: 15px 50px;
         margin-top: 7px;
         border: none;
         border-radius: 6px;
@@ -101,9 +88,6 @@ $fontmenu: font-weight 500, font-size 14px;
         font-size: 16px;
         font-weight: 500;
         cursor: pointer;
-      }
-      .btn:hover{
-        background-color: #0099ff;
       }
     }
     img {
@@ -113,7 +97,7 @@ $fontmenu: font-weight 500, font-size 14px;
   }
 }
 .LogoCloud {
-  position: relative;
+  position: static;
   justify-content: center;
   display: flex;
   width: 100%;
@@ -122,12 +106,12 @@ $fontmenu: font-weight 500, font-size 14px;
     display: flex;
     align-items: center;
     position: absolute;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: white;
     left: 165px;
-    top: 51em;
-    width: 60em;
-    margin: 0 auto;
+    top: 50rem;
+    display: block;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
     .logo {
