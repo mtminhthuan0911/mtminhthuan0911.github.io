@@ -91,64 +91,83 @@ and (max-width : 1024px)
 
 @media only screen and (min-width : 413px) 
 and (max-width : 736px){
-    .logopage{
-        padding-right: 50px;
-        position: fixed;
-        z-index: 50;
-        padding-left: 1.5rem;
-        left: 0;
-        transition: all .5s;
-      }
-      nav ul li a{
-        font-size: 16px;
-      }
-      .checkbtn{
-          display: block;
-          position: fixed;
-          z-index: 99;
-          left: 0;
-          padding: 0px 2rem;
-          margin-top: 30px;
-          transition: all .5s;
-        }
-        ul{
-          position: fixed;
-          width: 50%;
-          height: 100%;
-          background-color: #ffffff;
-          top: 0px;
-          left: -100%;
-          text-align: center;
-          transition: all 1s;
-        }
-        nav ul li{
-          display: block;
-          margin: 40px 0;
-          line-height: 30px;
-        }
-        nav ul li a{
-          font-size: 20px;
-        }
-        #check:checked ~ ul{
-          left: 0;
-          display: block;
-          line-height: 30px;
-        }
+    .header-navright{
+      display: none;
+    }
+    .header{
+      display: none;
+    }
+    // .logopage{
+    //     padding-right: 50px;
+    //     padding-left: 1.5rem;
+    //     left: 0;
+    //     transition: all .5s;
+    //   }
+    //   nav ul li a{
+    //     font-size: 16px;
+    //   }
+    //   .checkbtn{
+    //       display: block;
+    //       left: 0;
+    //       padding: 0px 2rem;
+    //       margin-top: 30px;
+    //       transition: all .5s;
+    //     }
+    //     ul{
+    //       position: fixed;
+    //       width: 50%;
+    //       height: 100vh;
+    //       background: #0099ff;
+    //       top: 80px;
+    //       left: 0;
+    //       text-align: center;
+    //       transition: all 1s;
+    //     }
+    //     nav ul li{
+    //       display: block;
+    //       margin: 40px 0;
+    //       line-height: 30px;
+    //     }
+    //     nav ul li a{
+    //       font-size: 20px;
+    //     }
+    //     #check:checked ~ ul{
+    //       left: 0;
+    //       display: block;
+    //       line-height: 30px;
+    //     }
        
         .container{
             .foodspin{
       
                 .spinbackground{
-                 left: 94px;
-                 top: 17px;
-                 width: 377px;
-                 height: 377px;
+                  left: 20px;
+                  top: 47px;
+                  width: 300px;
+                  height: 300px;
+                  .ciclegraph{
+                    width: 300px;
+                    height: 300px;
+                  }
+                }
+                #up{
+                  left: 37px;
+                  top: 450px;
+                }
+                #down{
+                  left: 270px;
+                  top: 450px;
+                }
+                .imgproduct{
+                  left: 57px !important;
+                  top: 300px !important;
                 }
             }
             .content{
-                margin: 0px 40px;
-                top: 500px;
-                text-align: center;
+              margin: 0px 4px;
+              top: 561px;
+              text-align: center;
+              
                }
             
         }
