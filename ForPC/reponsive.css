@@ -1,0 +1,130 @@
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .container {
+    display: block;
+  }
+  .container .foodspin .spinbackground {
+    left: 94px;
+    top: -117px;
+    width: 577px;
+    height: 577px;
+  }
+  .container .foodspin #up {
+    border: none;
+    position: absolute;
+    background-color: #E87F1E;
+    border-radius: 100em;
+    width: 40px;
+    height: 40px;
+    left: 120px;
+    top: 530px;
+    cursor: pointer;
+  }
+  .container .foodspin #up i {
+    color: #ffff;
+  }
+  .container .foodspin #down {
+    border: none;
+    position: absolute;
+    background-color: #E87F1E;
+    border-radius: 100em;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    left: 600px;
+    top: 530px;
+  }
+  .container .foodspin #down i {
+    color: #ffff;
+  }
+  .container .foodspin .imgproduct {
+    position: absolute;
+    width: 250px;
+    height: 244.96px;
+    left: 255px !important;
+    top: 375px !important;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    -webkit-animation: leaves 1.5s ease-in-out infinite alternate;
+            animation: leaves 1.5s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes leaves {
+    0% {
+      transform: scale(1);
+      opacity: 0.7;
+      -webkit-transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+    }
+  }
+  @keyframes leaves {
+    0% {
+      transform: scale(1);
+      opacity: 0.7;
+      -webkit-transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+    }
+  }
+  .container .content {
+    margin: 0px 220px;
+    top: 600px;
+    text-align: center;
+  }
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #0099ff;
+  float: right;
+  line-height: 80px;
+  display: none;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+@media only screen and (min-width: 413px) and (max-width: 736px) {
+  .header-navright {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  .container .foodspin .spinbackground {
+    left: 20px;
+    top: 47px;
+    width: 300px;
+    height: 300px;
+  }
+  .container .foodspin .spinbackground .ciclegraph {
+    width: 300px;
+    height: 300px;
+  }
+  .container .foodspin #up {
+    left: 37px;
+    top: 450px;
+  }
+  .container .foodspin #down {
+    left: 270px;
+    top: 450px;
+  }
+  .container .foodspin .imgproduct {
+    left: 57px !important;
+    top: 300px !important;
+  }
+  .container .content {
+    margin: 0px 4px;
+    top: 561px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=reponsive.css.map */
