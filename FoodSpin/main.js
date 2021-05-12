@@ -4,7 +4,7 @@
 
 var i = 0;
 var color = ["#FF922C","#54BF29","#2DA5F5","#F85430","#2C59F9"];
-var img = ["./Media/product5.png","./Media/product6.png","./Media/product7.png","./Media/product8.png","./Media/product9.png"];
+var img = ["./Media/product5.png","./Media/product6.png","./Media/product7.png","./Media/product8.png","./Media/product14.png"];
 var background = ["#FFEEDE","#EAFFE2","#96D5FF","#FFB1A0","#98ADF5"]
 var price = ["$32","$35","$40","53$","$55"];
 var content = ["Green Goddess","Asian Cucumber","Chickendunk","Spaghetti 2021","Lobster Seafood"];

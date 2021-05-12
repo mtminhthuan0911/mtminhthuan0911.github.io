@@ -1,3 +1,150 @@
+.checkbtn{
+  font-size: 30px;
+  color: #0099ff;
+  float: right;
+  line-height: 80px;
+  display: none;
+  margin-right: 40px;
+  cursor: pointer;
+}
+#check{
+  display: none;
+}
+
+@media only screen and (min-width : 413px) 
+and (max-width : 736px){
+    .header-navright{
+      display: none;
+    }
+    .header{
+      display: block;
+      .menu{
+        padding-right: 0;
+      }
+    }
+      // menu bar
+      .logo{
+        
+        position: fixed;
+        z-index: 50;
+        padding-left: 1.5rem;
+        left: 0;
+        transition: all .5s;
+      }
+      nav ul li a{
+        font-size: 16px;
+      }
+      .checkbtn{
+          display: block;
+          position: fixed;
+          z-index: 99;
+          left: 0;
+          padding: 0px 2rem;
+          margin-top: 60px;
+          transition: all .5s;
+        }
+        ul{
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          background-color: #ffffff;
+          padding-top: 1.5rem;
+          top: 0px;
+          left: -100%;
+          text-align: center;
+          transition: all .5s;
+        }
+        nav ul li{
+          display: block;
+          margin: 40px 0;
+          line-height: 30px;
+        }
+        nav ul li a{
+          font-size: 20px;
+        }
+        #check:checked ~ ul{
+          left: 0;
+          display: block;
+          line-height: 30px;
+        }
+       // menu bar
+        .container{
+            .foodspin{
+      
+                .spinbackground{
+                  left: 60px;
+                  top: 47px;
+                  width: 300px;
+                  height: 300px;
+                  .ciclegraph{
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 100rem;
+                    position: relative;
+                    border: 2px dashed #E87F1E;
+                    top: 100.95px;
+                    transition: all 1s ease-in-out;
+                    .circle{
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      width: 100px;
+                      height: 100px;
+                      margin: calc(-180px / 2);
+                      border-radius: 50%;
+                    }
+                    #product{
+                      width: 80px;
+                      height: 80px;
+                      margin: 45px;
+                      background-image: none !important;
+                    }
+                  }
+                }
+                #up{
+                  left: 37px;
+                  top: 400px;
+                }
+                #down{
+                  left: 350px;
+                  top: 400px;
+                }
+                .imgproduct{
+                  left: 137px !important;
+                  top: 300px !important;
+                  width: 160px !important;
+                  height: 160px !important;
+                }
+            }
+            .content{
+              margin: 0px 50px;
+              top:  447px;
+              text-align: center;
+              #prices{
+                font-size: 40px;
+                
+              }
+              #title{
+                font-size: 20px;
+                line-height: 10px;
+              }
+              #titles{
+                font-size: 20px;
+
+              }
+              #btn{
+                padding: 10px 24px;
+              }
+
+               }
+            
+        }
+}
+
+
+
+
+
 @media only screen and (min-width : 767px) 
 and (max-width : 1024px)
  {
@@ -75,103 +222,9 @@ and (max-width : 1024px)
    }
 }
 
-.checkbtn{
-    font-size: 30px;
-    color: #0099ff;
-    float: right;
-    line-height: 80px;
-    display: none;
-    margin-right: 40px;
-    cursor: pointer;
-  }
-  #check{
-    display: none;
-  }
 
 
-@media only screen and (min-width : 413px) 
-and (max-width : 736px){
-    .header-navright{
-      display: none;
-    }
-    .header{
-      display: none;
-    }
-    // .logopage{
-    //     padding-right: 50px;
-    //     padding-left: 1.5rem;
-    //     left: 0;
-    //     transition: all .5s;
-    //   }
-    //   nav ul li a{
-    //     font-size: 16px;
-    //   }
-    //   .checkbtn{
-    //       display: block;
-    //       left: 0;
-    //       padding: 0px 2rem;
-    //       margin-top: 30px;
-    //       transition: all .5s;
-    //     }
-    //     ul{
-    //       position: fixed;
-    //       width: 50%;
-    //       height: 100vh;
-    //       background: #0099ff;
-    //       top: 80px;
-    //       left: 0;
-    //       text-align: center;
-    //       transition: all 1s;
-    //     }
-    //     nav ul li{
-    //       display: block;
-    //       margin: 40px 0;
-    //       line-height: 30px;
-    //     }
-    //     nav ul li a{
-    //       font-size: 20px;
-    //     }
-    //     #check:checked ~ ul{
-    //       left: 0;
-    //       display: block;
-    //       line-height: 30px;
-    //     }
-       
-        .container{
-            .foodspin{
-      
-                .spinbackground{
-                  left: 20px;
-                  top: 47px;
-                  width: 300px;
-                  height: 300px;
-                  .ciclegraph{
-                    width: 300px;
-                    height: 300px;
-                  }
-                }
-                #up{
-                  left: 37px;
-                  top: 450px;
-                }
-                #down{
-                  left: 270px;
-                  top: 450px;
-                }
-                .imgproduct{
-                  left: 57px !important;
-                  top: 300px !important;
-                }
-            }
-            .content{
-              margin: 0px 4px;
-              top: 561px;
-              text-align: center;
-              
-               }
-            
-        }
-}
+
 @media only screen  and (min-width : 1824px) {
   /* Styles */
   .header{

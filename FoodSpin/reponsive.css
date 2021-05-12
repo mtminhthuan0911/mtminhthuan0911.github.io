@@ -1,3 +1,138 @@
+.checkbtn {
+  font-size: 30px;
+  color: #0099ff;
+  float: right;
+  line-height: 80px;
+  display: none;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+@media only screen and (min-width: 413px) and (max-width: 736px) {
+  .header-navright {
+    display: none;
+  }
+  .header {
+    display: block;
+  }
+  .header .menu {
+    padding-right: 0;
+  }
+  .logo {
+    position: fixed;
+    z-index: 50;
+    padding-left: 1.5rem;
+    left: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  .checkbtn {
+    display: block;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    padding: 0px 2rem;
+    margin-top: 60px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding-top: 1.5rem;
+    top: 0px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 40px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+    display: block;
+    line-height: 30px;
+  }
+  .container .foodspin .spinbackground {
+    left: 60px;
+    top: 47px;
+    width: 300px;
+    height: 300px;
+  }
+  .container .foodspin .spinbackground .ciclegraph {
+    width: 300px;
+    height: 300px;
+    border-radius: 100rem;
+    position: relative;
+    border: 2px dashed #E87F1E;
+    top: 100.95px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .container .foodspin .spinbackground .ciclegraph .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin: calc(-180px / 2);
+    border-radius: 50%;
+  }
+  .container .foodspin .spinbackground .ciclegraph #product {
+    width: 80px;
+    height: 80px;
+    margin: 45px;
+    background-image: none !important;
+  }
+  .container .foodspin #up {
+    left: 37px;
+    top: 400px;
+  }
+  .container .foodspin #down {
+    left: 350px;
+    top: 400px;
+  }
+  .container .foodspin .imgproduct {
+    left: 137px !important;
+    top: 300px !important;
+    width: 160px !important;
+    height: 160px !important;
+  }
+  .container .content {
+    margin: 0px 50px;
+    top: 447px;
+    text-align: center;
+  }
+  .container .content #prices {
+    font-size: 40px;
+  }
+  .container .content #title {
+    font-size: 20px;
+    line-height: 10px;
+  }
+  .container .content #titles {
+    font-size: 20px;
+  }
+  .container .content #btn {
+    padding: 10px 24px;
+  }
+}
+
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
   .container {
     display: block;
@@ -74,56 +209,6 @@
   .container .content {
     margin: 0px 220px;
     top: 600px;
-    text-align: center;
-  }
-}
-
-.checkbtn {
-  font-size: 30px;
-  color: #0099ff;
-  float: right;
-  line-height: 80px;
-  display: none;
-  margin-right: 40px;
-  cursor: pointer;
-}
-
-#check {
-  display: none;
-}
-
-@media only screen and (min-width: 413px) and (max-width: 736px) {
-  .header-navright {
-    display: none;
-  }
-  .header {
-    display: none;
-  }
-  .container .foodspin .spinbackground {
-    left: 20px;
-    top: 47px;
-    width: 300px;
-    height: 300px;
-  }
-  .container .foodspin .spinbackground .ciclegraph {
-    width: 300px;
-    height: 300px;
-  }
-  .container .foodspin #up {
-    left: 37px;
-    top: 450px;
-  }
-  .container .foodspin #down {
-    left: 270px;
-    top: 450px;
-  }
-  .container .foodspin .imgproduct {
-    left: 57px !important;
-    top: 300px !important;
-  }
-  .container .content {
-    margin: 0px 4px;
-    top: 561px;
     text-align: center;
   }
 }
