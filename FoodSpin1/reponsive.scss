@@ -13,132 +13,132 @@
 
 @media only screen and (min-width : 413px) 
 and (max-width : 736px){
-    .header-navright{
-      display: none;
+  .header-navright{
+    display: none;
+  }
+  .header{
+    display: block;
+    .menu{
+      padding-right: 0;
     }
-    .header{
-      display: block;
-      .menu{
-        padding-right: 0;
-      }
+  }
+    // menu bar
+    .logo{
+      
+      position: fixed;
+      z-index: 50;
+      padding-left: 1.5rem;
+      left: 0;
+      transition: all .5s;
     }
-      // menu bar
-      .logo{
-        
+    nav ul li a{
+      font-size: 16px;
+    }
+    .checkbtn{
+        display: block;
         position: fixed;
-        z-index: 50;
-        padding-left: 1.5rem;
+        z-index: 99;
         left: 0;
+        padding: 0px 2rem;
+        margin-top: 60px;
         transition: all .5s;
       }
-      nav ul li a{
-        font-size: 16px;
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        padding-top: 1.5rem;
+        top: 0px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
       }
-      .checkbtn{
-          display: block;
-          position: fixed;
-          z-index: 99;
-          left: 0;
-          padding: 0px 2rem;
-          margin-top: 60px;
-          transition: all .5s;
-        }
-        ul{
-          position: fixed;
-          width: 100%;
-          height: 100%;
-          background-color: #ffffff;
-          padding-top: 1.5rem;
-          top: 0px;
-          left: -100%;
-          text-align: center;
-          transition: all .5s;
-        }
-        nav ul li{
-          display: block;
-          margin: 40px 0;
-          line-height: 30px;
-        }
-        nav ul li a{
-          font-size: 20px;
-        }
-        #check:checked ~ ul{
-          left: 0;
-          display: block;
-          line-height: 30px;
-        }
-       // menu bar
-        .container{
-            .foodspin{
-      
-                .spinbackground{
-                  left: 60px;
-                  top: 47px;
+      nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      #check:checked ~ ul{
+        left: 0;
+        display: block;
+        line-height: 30px;
+      }
+     // menu bar
+      .container{
+          .foodspin{
+    
+              .spinbackground{
+                left: 60px;
+                top: 47px;
+                width: 300px;
+                height: 300px;
+                .ciclegraph{
                   width: 300px;
                   height: 300px;
-                  .ciclegraph{
-                    width: 300px;
-                    height: 300px;
-                    border-radius: 100rem;
-                    position: relative;
-                    border: 2px dashed #E87F1E;
-                    top: 100.95px;
-                    transition: all 1s ease-in-out;
-                    .circle{
-                      position: absolute;
-                      top: 50%;
-                      left: 50%;
-                      width: 100px;
-                      height: 100px;
-                      margin: calc(-180px / 2);
-                      border-radius: 50%;
-                    }
-                    #product{
-                      width: 80px;
-                      height: 80px;
-                      margin: 45px;
-                      background-image: none !important;
-                    }
+                  border-radius: 100rem;
+                  position: relative;
+                  border: 2px dashed #E87F1E;
+                  top: 100.95px;
+                  transition: all 1s ease-in-out;
+                  .circle{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 100px;
+                    height: 100px;
+                    margin: calc(-180px / 2);
+                    border-radius: 50%;
+                  }
+                  #product{
+                    width: 80px;
+                    height: 80px;
+                    margin: 45px;
+                    background-image: none !important;
                   }
                 }
-                #up{
-                  left: 37px;
-                  top: 400px;
-                }
-                #down{
-                  left: 350px;
-                  top: 400px;
-                }
-                .imgproduct{
-                  left: 137px !important;
-                  top: 300px !important;
-                  width: 160px !important;
-                  height: 160px !important;
-                }
+              }
+              #up{
+                left: 37px;
+                top: 400px;
+              }
+              #down{
+                left: 350px;
+                top: 400px;
+              }
+              .imgproduct{
+                left: 137px !important;
+                top: 300px !important;
+                width: 160px !important;
+                height: 160px !important;
+              }
+          }
+          .content{
+            margin: 0px 50px;
+            top:  447px;
+            text-align: center;
+            #prices{
+              font-size: 40px;
+              
             }
-            .content{
-              margin: 0px 50px;
-              top:  447px;
-              text-align: center;
-              #prices{
-                font-size: 40px;
-                
-              }
-              #title{
-                font-size: 20px;
-                line-height: 10px;
-              }
-              #titles{
-                font-size: 20px;
+            #title{
+              font-size: 20px;
+              line-height: 10px;
+            }
+            #titles{
+              font-size: 20px;
 
-              }
-              #btn{
-                padding: 10px 24px;
-              }
+            }
+            #btn{
+              padding: 10px 24px;
+            }
 
-               }
-            
-        }
+             }
+          
+      }
 }
 
 
