@@ -36,10 +36,31 @@ responsive:{
         items:1
     },
     700:{
-        items:1
+        items:2
     },
     1000:{
         items:3
     },
 }
 });
+
+function nextclickButton(){
+   var element = document.getElementById("numberroll")
+    var value = element.innerHTML;
+    value ++ ;
+    
+
+    console.log(value);
+    element.innerHTML =  ('0' + value) ;
+    // element.style.animation = "scale 1s ease-in-out" 
+}
+function prevclickButton(){
+    var element = document.getElementById("numberroll")
+     var value = element.innerHTML;
+     --value;
+ 
+     console.log(value);
+     element.innerHTML = '0' + value;
+     
+     // element.style.animation = "scale 1s ease-in-out" 
+ }
