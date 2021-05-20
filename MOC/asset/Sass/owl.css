@@ -1,0 +1,105 @@
+
+.card {
+    box-shadow: 0px 4px 8px 0px #BDBDBD
+}
+
+.profile-pic {
+    width: 100px !important;
+    height: 100px;
+    box-shadow: 0px 4px 8px 0px #BDBDBD
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    background: 0 0;
+    color: #1E88E5 !important;
+    border: none;
+    padding: 5px 20px !important;
+    font: inherit;
+    font-size: 50px !important
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+    color: #0D47A1 !important;
+    background-color: transparent !important
+}
+
+.owl-dots {
+    display: none
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.item {
+    display: none;
+}
+
+.next {
+    display: block !important;
+    position: absolute;
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    opacity: 0.2;
+    width: 500px;
+    height: 332px;
+}
+
+.prev {
+    display: block !important;
+    position: absolute;
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    opacity: 0.2;
+    width: 500px;
+    height: 332px;
+}
+
+.item.show {
+    display: block;
+    position: relative;
+    transition-duration: 0.4s;
+    width: 500px;
+    height: 332px;
+    left: 0;
+}
+
+@media screen and (max-width: 999px) {
+
+    .next,
+    .prev {
+        transform: scale(1);
+        opacity: 1
+    }
+
+    .item {
+        display: block !important
+    }
+}
+.items {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 40px
+}
+
+.slick-slide {
+    margin: 10px
+}
+
+.slick-slide img {
+    width: 100%;
+    border: 0px solid #fff
+}
+.slick-next{
+    background-color: #0D47A1 !important;
+    border-radius: 100rem !important;
+}
+.slick-prev{
+    background-color: #0D47A1 !important;
+    border-radius: 100rem !important;
+}
