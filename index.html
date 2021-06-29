@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="reposive.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/7d65f38fc8.js"
+      crossorigin="anonymous"
+    ></script> 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Thuanvm.epalshop</title>
+</head>
+<body>
+    <Header>
+        <div class="wrapper">
+            <div class="container">
+                <!-- <img src="Media/avartar1.png" alt=""> -->
+                <h1>Minh ,, Thuan</h1>
+                <p id="heading">Project</p>
+                <style>
+                  .switch-wrapper {
+                    /* Change css variables setting for other sizing */
+                    --width: 120px;
+                    --height: 40px;
+                    --padding: 5px;
+                    position: relative;
+                    cursor: pointer;
+                    width: var(--width);
+                    height: var(--height);
+                    display: block;
+                    margin: 0px auto;
+                    overflow: hidden;
+                    box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 0px;
+                    border-radius: 100rem;
+                    transition: background-color 0.25s linear;
+                    padding: var(--padding);
+                    box-sizing: border-box;
+                  }
+                  .switch-input {
+                    display: none;
+                  }
+                  .switch-input:checked + .switch-wrapper {
+                    background-color: #2979ff;
+                  }
+                  .switch-input:checked + .switch-wrapper .switch-spin {
+                    background-color: white;
+                    transform: translateX(
+                      calc(
+                        var(--width) - calc(var(--height) - calc(var(--padding) * 2)) -
+                          calc(var(--padding) * 2)
+                      )
+                    );
+                  }
+                  .switch-spin {
+                    width: calc(var(--height) - calc(var(--padding) * 2));
+                    height: calc(var(--height) - calc(var(--padding) * 2));
+                    border-radius: 100rem;
+                    background-color: #2979ff;
+                    transition: transform 0.25s linear, background-color 0.25s linear;
+                  }
+                </style>
+                <div class="ui-switch">
+                  <input type="checkbox" id="switch" class="switch-input" />
+                  <label for="switch" class="switch-wrapper">
+                    <div class="switch-spin"></div>
+                  </label>
+                </div>
+                <div class="Menu">
+                       <div class="flex">
+                         <a  href="https://thuanvm.epalshop.com/LandingPagePCAPP/">
+                             <div style="--i:1;" class="flex-item">
+                                 <h2>Landing Page</h2>
+                               <img
+                                 src="Media/Sample Preview.png"
+                                 alt="unsplash"
+                                 class="flex-image"
+                               />
+                               <div class="dropdown">
+                                <button class="dropbtn">Component</button>
+                               </div>
+                             </div>
+                         </a>
+                         <a  href="https://thuanvm.epalshop.com/FoodSpin/">
+                             <div style="--i:2;" class="flex-item">
+                                <h2>Code Slide</h2>
+                               <img
+                                 src="Media/1.png"
+                                 alt="unsplash"
+                                 class="flex-image"
+                               />
+                               <div class="dropdown">
+                                <button class="dropbtn">Component</button>
+                               </div>
+                             </div>
+                         </a>
+                         <a  href="https://thuanvm.epalshop.com/FruitSalad/">
+                             <div style="--i:3;" class="flex-item">
+                                <h2>Fruit Salad</h2>
+                               <img
+                                 src="Media/Thumbnail.png"
+                                 alt="unsplash"
+                                 class="flex-image"
+                               />
+                               <div class="dropdown">
+                                <button class="dropbtn">Component</button>
+                               </div>
+                             </div>
+                         </a>
+                             <div style="--i:4;" class="flex-item">
+                                <h2>Moc Flowers</h2>
+                               <img
+                                 src="Media/opt2.png"
+                                 alt="unsplash"
+                                 class="flex-image"
+                               />
+                               <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Component <i class="uil uil-angle-double-up"></i></button>
+                                <div id="myDropdown" class="dropdown-content">
+                                  <a href="https://thuanvm.epalshop.com/Thuanvm/">Tranh Chủ <i class="uil uil-angle-double-right"></i></a>
+                                  <a href="https://thuanvm.epalshop.com/Thuanvm/Category.html">Danh Mục Sản Phẩm <i class="uil uil-angle-double-right"></i></a>
+                                  <a href="https://thuanvm.epalshop.com/Thuanvm/ProductDetails.html">Chi Tiết Sản Phẩm <i class="uil uil-angle-double-right"></i></a>
+                                  <a href="https://thuanvm.epalshop.com/Thuanvm/Shoppingcart.html">Giỏ Hàng <i class="uil uil-angle-double-right"></i></a>
+                                  <a href="https://thuanvm.epalshop.com/Thuanvm/Checkout.html">Thanh Toán <i class="uil uil-angle-double-right"></i></a>
+                                  <a href="https://thuanvm.epalshop.com/Thuanvm/Checkout.html">TT Thanh Toán <i class="uil uil-angle-double-right"></i></a>
+                                  <a href="https://thuanvm.epalshop.com/Thuanvm/Bill.html">HĐ Thanh Toán <i class="uil uil-angle-double-right"></i></a>
+                                </div>                              
+                               </div>
+                             </div>
+                      
+                             <a  href="https://thuanvm.epalshop.com/wordpress/">
+                              <div style="--i:3;" class="flex-item">
+                                 <h2>MocFlowers - WP</h2>
+                                <img
+                                  src="Media/opt2.png"
+                                  alt="unsplash"
+                                  class="flex-image"
+                                />
+                                <div class="dropdown">
+                                 <button class="dropbtn">Component</button>
+                                </div>
+                              </div>
+                          </a>
+                          
+                </div>
+            </div>
+        </div>
+    </Header>
+
+    <script src="main.js"></script>
+    <script>
+      function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+</body>
+</html> 
