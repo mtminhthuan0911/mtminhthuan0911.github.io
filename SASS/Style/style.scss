@@ -1,0 +1,36 @@
+// Link Font : 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+// * Total Page : 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+button{
+    cursor: pointer;
+    font-family: 'Montserrat Alternates';
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    font-family: 'Montserrat Alternates';
+    background-color: #262626;
+    color: #FFFFFF
+}
+
+@import '../layout/header';
+@import '../layout/AboutMe';

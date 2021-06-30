@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Montserrat Alternates';
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  font-family: 'Montserrat Alternates';
+  background-color: #262626;
+  color: #FFFFFF;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.wrapper .container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper .container .Navigation-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .container .Navigation-menu-item {
+  padding: 40px;
+}
+
+.wrapper .container .Navigation-menu-item-link {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 10px 10px;
+}
+
+.wrapper .container .header-logoPage img {
+  max-width: 100px;
+  margin: 20px auto;
+}
+
+.wrapper .container .header-content {
+  margin: 0 auto;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.wrapper .container .header-content-title {
+  font-size: 50px;
+  margin: 0 auto;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: animate 1.5s linear forwards;
+          animation: animate 1.5s linear forwards;
+  border-right: 4px solid #FFFFFF;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.wrapper .container .header-content-title span {
+  font-weight: bold;
+}
+
+.wrapper .container .header-content-name {
+  font-size: 90px;
+  font-weight: bold;
+  margin: 0 auto;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: animate 1.5s linear forwards;
+          animation: animate 1.5s linear forwards;
+  border-right: 4px solid #FFFFFF;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.wrapper .container .header-content-name span {
+  font-family: 'Roboto Mono';
+}
+
+@-webkit-keyframes animate {
+  0% {
+    height: 100%;
+    width: 0;
+  }
+  100% {
+    width: 100%;
+    border: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  0% {
+    height: 100%;
+    width: 0;
+  }
+  100% {
+    width: 100%;
+    border: 0;
+    opacity: 1;
+  }
+}
+
+.wrapper .container .header-content-desc {
+  margin: 0 auto;
+  font-size: 50px;
+  margin: 0 auto;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: animate 1.5s linear forwards;
+          animation: animate 1.5s linear forwards;
+  border-right: 4px solid #FFFFFF;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.wrapper .container .header-content-desc span {
+  font-weight: bold;
+}
+
+.AboutMe {
+  max-width: 100%;
+  margin-top: 100px;
+  padding: 100px 0px;
+  background-color: #1E1E1E;
+}
+
+.AboutMe .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.AboutMe .container .About_Me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.AboutMe .container .About_Me-info .Avartar {
+  max-width: 350px;
+}
+
+.AboutMe .container .About_Me-Content {
+  margin-left: 100px;
+}
+
+.AboutMe .container .About_Me-Content .Title {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.AboutMe .container .About_Me-Content .desc {
+  line-height: 40px;
+}
+
+.AboutMe .container .About_Me .btn {
+  margin-top: 25px;
+  padding: 8px 35px;
+  border: 2px solid #FFFFFF;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  background: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.AboutMe .container .About_Me .btn-primary:hover {
+  background-color: #FFFFFF;
+  color: #1E1E1E;
+}
+
+.AboutMe .container .About_Me .btn-second {
+  margin-left: 30px;
+}
+
+.AboutMe .container .About_Me .btn-second:hover {
+  background-color: #FFFFFF;
+  color: #1E1E1E;
+}
+/*# sourceMappingURL=style.css.map */

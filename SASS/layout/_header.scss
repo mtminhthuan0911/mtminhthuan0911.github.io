@@ -1,0 +1,102 @@
+.wrapper{
+    width: 100%;
+    .container{
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+        .Navigation{
+            &-menu{
+                display: flex;
+                justify-content: center;
+                &-item{
+                    padding: 40px;
+                    &-link{
+                        text-align: center;
+                        color: #FFFFFF;
+                        font: {
+                            weight: bold;
+                        };
+                        padding: 10px 10px;
+                    }
+                }
+            }
+        }
+        .header{
+            &-logoPage{
+                img{
+                    max-width: 100px;
+                    margin: 20px auto;
+                }
+            }
+            &-content{
+                margin: 0 auto;
+                padding-top: 40px;
+                text-align: center;
+                &-title{
+                    font: {
+                        size:50px;
+                    };
+                    span{
+                        font-weight: bold;
+                    }
+                    margin: 0 auto;
+                    opacity: 0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    animation: animate 1.5s linear forwards;
+                    border-right: 4px solid #FFFFFF;
+                    animation-delay: 0.5s;
+                }
+                &-name{
+                    font: {
+                        size:90px;
+                    };
+                    font-weight: bold;
+                    span{
+                        font-family: 'Roboto Mono';
+                        
+                    }
+                    margin: 0 auto;
+                    opacity: 0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    animation: animate 1.5s linear forwards;
+                    border-right: 4px solid #FFFFFF;
+                    animation-delay: 2s;
+                }
+                @keyframes animate {
+
+                    0%{
+                        height:100%;
+                        width: 0;
+                        
+                    }
+                    100%{
+                        width: 100%;
+                        border: 0;
+                        opacity: 1;
+                    }
+                }
+                &-desc{
+                   
+                    margin: 0 auto;
+                    font: {
+                        size:50px;
+                    };
+                   
+                    span{
+                        font-weight: bold;
+                    }
+
+                    margin: 0 auto;
+                    opacity: 0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    animation: animate 1.5s linear forwards;
+                    border-right: 4px solid #FFFFFF;
+                    animation-delay: 4s;
+                }
+            }
+        }
+    }
+}
