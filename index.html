@@ -8,43 +8,100 @@
     <link rel="stylesheet" href="Reset/Reset.css">
     <script src="https://kit.fontawesome.com/7d65f38fc8.js"crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="SASS/Style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+    <!-- Loading Page -->
+    <div class="intro">
+        <svg class="intro-Logo" width="500" height="89" viewBox="0 0 1080 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="89" fill="none">
+            <rect fill="white" width="1080" height="89"/>
+            <path d="M77.44 86.44L77.32 36.04L52.6 77.56H43.84L19.24 37.12V86.44H1V2.44H17.08L48.52 54.64L79.48 2.44H95.44L95.68 86.44H77.44Z"/>
+            <path d="M178.394 18.04V70.84H192.914V86.44H144.314V70.84H158.954V18.04H144.314V2.44H192.914V18.04H178.394Z"/>
+            <path d="M286.106 1C296.106 1 303.906 4.16 309.506 10.48C315.106 16.72 317.906 25.64 317.906 37.24V86.44H298.466V37.84C298.466 31.12 296.866 26.08 293.666 22.72C290.546 19.28 286.186 17.56 280.586 17.56C274.666 17.56 269.906 19.4 266.306 23.08C262.786 26.68 261.026 32.04 261.026 39.16V86.44H241.586V2.44H260.426V12.64C263.306 8.8 266.906 5.92 271.226 4C275.546 2 280.506 1 286.106 1Z"/>
+            <path d="M448.118 2.44V86.44H428.678V52H390.518V86.44H371.078V2.44H390.518V35.56H428.678V2.44H448.118Z"/>
+            <path d="M563.177 25.96C555.977 21.8 548.257 19.12 540.017 17.92V86.44H520.577V17.92C512.337 19.12 504.577 21.8 497.297 25.96L490.697 11.44C496.457 8 502.697 5.4 509.417 3.64C516.137 1.88 523.057 1 530.177 1C537.377 1 544.337 1.88 551.057 3.64C557.857 5.4 564.097 8 569.777 11.44L563.177 25.96Z"/>
+            <path d="M689.524 2.44V86.44H670.084V52H631.924V86.44H612.484V2.44H631.924V35.56H670.084V2.44H689.524Z"/>
+            <path d="M818.503 2.44V86.44H799.663V76.24C793.903 84 785.423 87.88 774.223 87.88C764.303 87.88 756.543 84.76 750.943 78.52C745.423 72.2 742.663 63.24 742.663 51.64V2.44H762.103V51.04C762.103 57.76 763.663 62.84 766.783 66.28C769.983 69.64 774.303 71.32 779.743 71.32C785.583 71.32 790.263 69.52 793.783 65.92C797.303 62.24 799.063 56.84 799.063 49.72V2.44H818.503Z"/>
+            <path d="M910.206 1C917.966 1 924.726 2.52 930.486 5.56C936.246 8.6 940.726 13.08 943.926 19C947.126 24.92 948.726 32.08 948.726 40.48V86.44H929.286V66.28H890.886V86.44H871.686V40.48C871.686 32.08 873.286 24.92 876.486 19C879.686 13.08 884.166 8.6 889.926 5.56C895.686 2.52 902.446 1 910.206 1ZM929.286 50.68V38.68C929.286 31.72 927.566 26.48 924.126 22.96C920.686 19.36 916.006 17.56 910.086 17.56C904.086 17.56 899.366 19.36 895.926 22.96C892.566 26.48 890.886 31.72 890.886 38.68V50.68H929.286Z"/>
+            <path d="M1046.42 1C1056.42 1 1064.22 4.16 1069.82 10.48C1075.42 16.72 1078.22 25.64 1078.22 37.24V86.44H1058.78V37.84C1058.78 31.12 1057.18 26.08 1053.98 22.72C1050.86 19.28 1046.5 17.56 1040.9 17.56C1034.98 17.56 1030.22 19.4 1026.62 23.08C1023.1 26.68 1021.34 32.04 1021.34 39.16V86.44H1001.9V2.44H1020.74V12.64C1023.62 8.8 1027.22 5.92 1031.54 4C1035.86 2 1040.82 1 1046.42 1Z"/>
+            </mask>
+            <path d="M77.44 86.44L77.32 36.04L52.6 77.56H43.84L19.24 37.12V86.44H1V2.44H17.08L48.52 54.64L79.48 2.44H95.44L95.68 86.44H77.44Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+            <path d="M178.394 18.04V70.84H192.914V86.44H144.314V70.84H158.954V18.04H144.314V2.44H192.914V18.04H178.394Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+            <path d="M286.106 1C296.106 1 303.906 4.16 309.506 10.48C315.106 16.72 317.906 25.64 317.906 37.24V86.44H298.466V37.84C298.466 31.12 296.866 26.08 293.666 22.72C290.546 19.28 286.186 17.56 280.586 17.56C274.666 17.56 269.906 19.4 266.306 23.08C262.786 26.68 261.026 32.04 261.026 39.16V86.44H241.586V2.44H260.426V12.64C263.306 8.8 266.906 5.92 271.226 4C275.546 2 280.506 1 286.106 1Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+            <path d="M448.118 2.44V86.44H428.678V52H390.518V86.44H371.078V2.44H390.518V35.56H428.678V2.44H448.118Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+            <path d="M563.177 25.96C555.977 21.8 548.257 19.12 540.017 17.92V86.44H520.577V17.92C512.337 19.12 504.577 21.8 497.297 25.96L490.697 11.44C496.457 8 502.697 5.4 509.417 3.64C516.137 1.88 523.057 1 530.177 1C537.377 1 544.337 1.88 551.057 3.64C557.857 5.4 564.097 8 569.777 11.44L563.177 25.96Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+            <path d="M689.524 2.44V86.44H670.084V52H631.924V86.44H612.484V2.44H631.924V35.56H670.084V2.44H689.524Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+            <path d="M818.503 2.44V86.44H799.663V76.24C793.903 84 785.423 87.88 774.223 87.88C764.303 87.88 756.543 84.76 750.943 78.52C745.423 72.2 742.663 63.24 742.663 51.64V2.44H762.103V51.04C762.103 57.76 763.663 62.84 766.783 66.28C769.983 69.64 774.303 71.32 779.743 71.32C785.583 71.32 790.263 69.52 793.783 65.92C797.303 62.24 799.063 56.84 799.063 49.72V2.44H818.503Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+            <path d="M910.206 1C917.966 1 924.726 2.52 930.486 5.56C936.246 8.6 940.726 13.08 943.926 19C947.126 24.92 948.726 32.08 948.726 40.48V86.44H929.286V66.28H890.886V86.44H871.686V40.48C871.686 32.08 873.286 24.92 876.486 19C879.686 13.08 884.166 8.6 889.926 5.56C895.686 2.52 902.446 1 910.206 1ZM929.286 50.68V38.68C929.286 31.72 927.566 26.48 924.126 22.96C920.686 19.36 916.006 17.56 910.086 17.56C904.086 17.56 899.366 19.36 895.926 22.96C892.566 26.48 890.886 31.72 890.886 38.68V50.68H929.286Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+            <path d="M1046.42 1C1056.42 1 1064.22 4.16 1069.82 10.48C1075.42 16.72 1078.22 25.64 1078.22 37.24V86.44H1058.78V37.84C1058.78 31.12 1057.18 26.08 1053.98 22.72C1050.86 19.28 1046.5 17.56 1040.9 17.56C1034.98 17.56 1030.22 19.4 1026.62 23.08C1023.1 26.68 1021.34 32.04 1021.34 39.16V86.44H1001.9V2.44H1020.74V12.64C1023.62 8.8 1027.22 5.92 1031.54 4C1035.86 2 1040.82 1 1046.42 1Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+            </svg>                  
+    </div>
+
     <!-- Header Page -->
-    <div class="wrapper">
-        <div class="container">
-            <nav class="Navigation">
-                <ul class="Navigation-menu">
-                    <li class="Navigation-menu-item"><a href="" class="Navigation-menu-item-link">Home</a></li>
-                    <li class="Navigation-menu-item"><a href="" class="Navigation-menu-item-link">About</a></li>
-                    <li class="Navigation-menu-item"><a href="" class="Navigation-menu-item-link">Project</a></li>
-                    <li class="Navigation-menu-item"><a href="" class="Navigation-menu-item-link">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header">
-                <div class="header-logoPage"><img src="Media/Z.svg" alt=""></div>
-                <div class="header-content">
-                    <h1 class="header-content-title"><span>HELLO</span> , MY NAME IS</h1>
-                    <h1 class="header-content-name"><span>M</span> I N H T H U A N</h1>
-                    <h1 class="header-content-desc">I ‘ M <span>FRONTEND DEVELOPER</span></h1>
+        <div class="Container">
+            <div class="wrapper">
+                <div class="container">
+                    <nav class="Navigation">
+                        <ul class="Navigation-menu">
+                            <li class="Navigation-menu-item"style="--i:1"><a href="" class="Navigation-menu-item-link"  >Home</a></li>
+                            <li class="Navigation-menu-item"style="--i:2"><a href="" class="Navigation-menu-item-link" >About</a></li>
+                            <li class="Navigation-menu-item"style="--i:3"><a href="" class="Navigation-menu-item-link" >Project</a></li>
+                            <li class="Navigation-menu-item"style="--i:4"><a href="" class="Navigation-menu-item-link" >Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header">
+                        <div class="header-logoPage"><img src="Media/Z.svg" alt=""></div>
+                        <div class="header-content">
+                            <audio src="Media/sound5.mp3" id="Twriter"></audio>
+                            <h1 class="header-content-title"><span>HELLO</span> , MY NAME IS </h1>
+                            <h1 class="header-content-name"><span>M</span> I N H T H U A N</h1>
+                            <h1 class="header-content-desc">I ‘ M <span>FRONTEND DEVELOPER</span></h1>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <section class="AboutMe">
-        <div class="container">
-            <div class="About_Me">
-                <div class="About_Me-info"><img class="Avartar" src="Media/avatar.png" alt=""></div>
-                    <div class="About_Me-Content">
-                        <h1 class="Title">About Me</h1>
-                        <p class="desc">
-                            I ‘ m Frontend Developer  .  I am currenyl working at Epal Solution as Fronten Developer , I love working with UI UX and Web Design  ,  I use Framework Reactjs for JS to create stunning UI and have a good UX for website
-                        </p>
-                        <button class="btn btn-primary">My CV</button>
-                        <button class="btn btn-second">Contact Me</button>
+            <section class="AboutMe">
+                <div class="container">
+                    <div class="About_Me">
+                        <div data-aos="fade-down-right" data-aos-offset="0"  data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out" class="About_Me-info"><img class="Avartar" src="Media/avatar.png" alt=""></div>
+                            <div data-aos="fade-down-left" data-aos-offset="0"  data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-in-out" class="About_Me-Content">
+                                <h1 class="Title">About Me</h1>
+                                <p class="desc">
+                                    I ‘ m Frontend Developer  .  I am currenyl working at Epal Solution as Fronten Developer , I love working with UI UX and Web Design  ,  I use Framework Reactjs for JS to create stunning UI and have a good UX for website
+                                </p>
+                                <button class="btn btn-primary">My CV</button>
+                                <button class="btn btn-second">Contact Me</button>
+                            </div>
                     </div>
-            </div>
+                </div>
+            </section>
+            <section class="Skill">
+                <p class="Skill-desc">What i will do for you</p>
+                <h2 class="Skill-heading">SERVICES</h2>
+                <div class="container">
+                    <div class="Skill_Webdesign">
+                        <img class="Skill_Webdesign-icons" src="Media/webdesign.svg" alt="">
+                        <p class="Skill_Webdesign-title">Web Design</p>
+                        <p class="Skill_Webdesign-Title">I do ui/ux design for the website that helps website to get a unique look.</p>
+                    </div>
+                    <div class="Skill_Webdesign">
+                        <img class="Skill_Webdesign-icons" src="Media/webdev.svg" alt="">
+                        <p class="Skill_Webdesign-title">Web Design</p>
+                        <p class="Skill_Webdesign-Title">I do ui/ux design for the website that helps website to get a unique look.</p>
+                    </div>
+                    <div class="Skill_Webdesign">
+                        <img class="Skill_Webdesign-icons" src="Media/Frame.svg" alt="">
+                        <p class="Skill_Webdesign-title">Web Design</p>
+                        <p class="Skill_Webdesign-Title">I do ui/ux design for the website that helps website to get a unique look.</p>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
+    <script src="./JS/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

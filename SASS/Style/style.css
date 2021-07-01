@@ -24,14 +24,232 @@ a {
 body {
   font-size: 16px;
   line-height: 1.5;
-  overflow-x: hidden;
   font-family: 'Montserrat Alternates';
   background-color: #262626;
   color: #FFFFFF;
+  overflow-x: hidden;
+  /* Create the parallax scrolling effect */
+}
+
+body.acc {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.intro {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.intro-Logo {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: fill 0.5s ease forwards 4s;
+          animation: fill 0.5s ease forwards 4s;
+}
+
+.intro-Logo path:nth-child(1) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 0.3s;
+          animation: line 2s ease forwards 0.3s;
+}
+
+.intro-Logo path:nth-child(2) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 0.6s;
+          animation: line 2s ease forwards 0.6s;
+}
+
+.intro-Logo path:nth-child(3) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 0.9s;
+          animation: line 2s ease forwards 0.9s;
+}
+
+.intro-Logo path:nth-child(4) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 1.2s;
+          animation: line 2s ease forwards 1.2s;
+}
+
+.intro-Logo path:nth-child(5) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 1.5s;
+          animation: line 2s ease forwards 1.5s;
+}
+
+.intro-Logo path:nth-child(6) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 1.8s;
+          animation: line 2s ease forwards 1.8s;
+}
+
+.intro-Logo path:nth-child(7) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 2.1s;
+          animation: line 2s ease forwards 2.1s;
+}
+
+.intro-Logo path:nth-child(8) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 2.4s;
+          animation: line 2s ease forwards 2.4s;
+}
+
+.intro-Logo path:nth-child(9) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 2.7s;
+          animation: line 2s ease forwards 2.7s;
+}
+
+.intro-Logo path:nth-child(10) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 3.0s;
+          animation: line 2s ease forwards 3.0s;
+}
+
+.intro-Logo path:nth-child(11) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 3.3s;
+          animation: line 2s ease forwards 3.3s;
+}
+
+.intro-Logo path:nth-child(12) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 3.7s;
+          animation: line 2s ease forwards 3.7s;
+}
+
+.intro-Logo path:nth-child(13) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 4.0s;
+          animation: line 2s ease forwards 4.0s;
+}
+
+.intro-Logo path:nth-child(14) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 4.3s;
+          animation: line 2s ease forwards 4.3s;
+}
+
+.intro-Logo path:nth-child(15) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 4.6s;
+          animation: line 2s ease forwards 4.6s;
+}
+
+.intro-Logo path:nth-child(16) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 4.9s;
+          animation: line 2s ease forwards 4.9s;
+}
+
+.intro-Logo path:nth-child(17) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 5.2s;
+          animation: line 2s ease forwards 5.2s;
+}
+
+.intro-Logo path:nth-child(18) {
+  stroke-dasharray: 562;
+  stroke-dashoffset: 562;
+  -webkit-animation: line 2s ease forwards 5.5s;
+          animation: line 2s ease forwards 5.5s;
+}
+
+path:nth-child(9) {
+  stroke-dasharray: 900;
+  stroke-dashoffset: 900;
+}
+
+@-webkit-keyframes line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    background: none;
+    fill: #FFFFFF;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    background: none;
+    fill: #FFFFFF;
+  }
+}
+
+.intro.active {
+  bottom: 0;
+  opacity: 1;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.intro.fade {
+  bottom: 10px;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.Container {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  height: 200vh;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .wrapper {
   width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
 }
 
 .wrapper .container {
@@ -51,18 +269,67 @@ body {
 
 .wrapper .container .Navigation-menu-item {
   padding: 40px;
+  opacity: 0;
+  -webkit-animation: scale 2s linear forwards;
+          animation: scale 2s linear forwards;
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
 }
 
 .wrapper .container .Navigation-menu-item-link {
-  text-align: center;
   color: #FFFFFF;
   font-weight: bold;
-  padding: 10px 10px;
+  font-size: 20px;
+  position: relative;
+  padding: 12px 24px;
+}
+
+.wrapper .container .Navigation-menu-item-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 2.5px solid whitesmoke;
+  left: 0;
+  bottom: 20px;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.wrapper .container .Navigation-menu-item-link:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+@-webkit-keyframes scale {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .wrapper .container .header-logoPage img {
-  max-width: 100px;
+  max-width: 120px;
   margin: 20px auto;
+  opacity: 0;
+  -webkit-animation: scale 2s linear forwards;
+          animation: scale 2s linear forwards;
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s;
 }
 
 .wrapper .container .header-content {
@@ -77,11 +344,11 @@ body {
   opacity: 0;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-animation: animate 1.5s linear forwards;
-          animation: animate 1.5s linear forwards;
+  -webkit-animation: animate 1.8s linear forwards;
+          animation: animate 1.8s linear forwards;
   border-right: 4px solid #FFFFFF;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
 }
 
 .wrapper .container .header-content-title span {
@@ -95,11 +362,11 @@ body {
   opacity: 0;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-animation: animate 1.5s linear forwards;
-          animation: animate 1.5s linear forwards;
+  -webkit-animation: animate 1.8s linear forwards;
+          animation: animate 1.8s linear forwards;
   border-right: 4px solid #FFFFFF;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
 
 .wrapper .container .header-content-name span {
@@ -137,11 +404,11 @@ body {
   opacity: 0;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-animation: animate 1.5s linear forwards;
-          animation: animate 1.5s linear forwards;
+  -webkit-animation: animate 1.8s linear forwards;
+          animation: animate 1.8s linear forwards;
   border-right: 4px solid #FFFFFF;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
 }
 
 .wrapper .container .header-content-desc span {
@@ -150,9 +417,10 @@ body {
 
 .AboutMe {
   max-width: 100%;
-  margin-top: 100px;
+  height: 100vh;
   padding: 100px 0px;
   background-color: #1E1E1E;
+  scroll-snap-align: start;
 }
 
 .AboutMe .container {
@@ -169,6 +437,8 @@ body {
 
 .AboutMe .container .About_Me-info .Avartar {
   max-width: 350px;
+  border: 4px solid antiquewhite;
+  border-radius: 100rem;
 }
 
 .AboutMe .container .About_Me-Content {
@@ -179,6 +449,19 @@ body {
   font-size: 40px;
   font-weight: bold;
   padding-bottom: 10px;
+  position: relative;
+}
+
+.AboutMe .container .About_Me-Content .Title:before {
+  content: "";
+  position: absolute;
+  width: 55%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 3px;
+  background-color: antiquewhite;
+  left: -10px;
+  top: 50%;
 }
 
 .AboutMe .container .About_Me-Content .desc {
@@ -209,5 +492,53 @@ body {
 .AboutMe .container .About_Me .btn-second:hover {
   background-color: #FFFFFF;
   color: #1E1E1E;
+}
+
+.Skill {
+  max-width: 1170px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 50px 15px;
+}
+
+.Skill-desc {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.Skill-heading {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Skill .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+.Skill .container .Skill_Webdesign {
+  text-align: center;
+}
+
+.Skill .container .Skill_Webdesign-icons {
+  margin: 0 auto;
+}
+
+.Skill .container .Skill_Webdesign-title {
+  font-size: 30px;
+}
+
+.Skill .container .Skill_Webdesign-Title {
+  max-width: 300px;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */
