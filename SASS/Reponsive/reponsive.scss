@@ -43,17 +43,27 @@ and (max-width : 736px){
                     text-align: center;
                     margin: 0 auto;
                     .Title{
-                        z-index: 2;
+                        font-size: 35px;
                         &:after{
                             width: 100%;
                             left: 50%;
                             transform: translateX(-50%);
                         }
+
+                        &-z{
+                            position: relative;
+                            padding: 2px;
+                            background-color: #1E1E1E;
+                            z-index: 2;
+                        }                    
                     }
                     .btn{
+                        margin: 0 auto;
                         padding: 8px 20px;
+                        display: block;
+                        margin-top: 20px;
                         &-second{
-                            margin: 30px 40px;
+                            // margin: 30px 40px;
                         }
                     }
                 }
