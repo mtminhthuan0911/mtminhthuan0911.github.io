@@ -1,0 +1,82 @@
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px){
+    /* Styles */
+    
+    .wrapper{
+        // height: 50vh;
+        .container{
+            .Navigation{
+                display: none !important;
+            }
+            .header{
+                padding-top: 100px;
+                &-logPage{
+                    img{
+                        max-width: 100px;
+                    }
+                }
+                &-content{
+                    line-height: 64px;
+                    &-title,&-desc{
+                        font-size: 20px;
+                    }
+                    &-name{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .AboutMe{
+        height: auto;
+        padding: 50px 0px !important;
+        .container{
+            .About_Me{
+                display: block;
+                &-info{
+                    .Avartar{
+                        margin: 0 auto;
+                        max-width: 300px;
+                    }
+                }
+                &-Content{
+                    text-align: center;
+                    margin: 0 auto;
+                    .Title{
+                        z-index: 2;
+                        &:after{
+                            width: 100%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                    .btn{
+                        padding: 8px 20px;
+                        &-second{
+                            margin: 30px 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Skill{
+        .container{
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            .Skill_Webdesign{
+                padding-bottom: 60px;
+                &-Title{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .intro{
+        &-Logo{
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+    

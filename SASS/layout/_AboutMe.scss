@@ -12,8 +12,8 @@
             display: flex;
             &-info{
                 .Avartar{
-                    max-width: 350px;
-                    border: 4px solid antiquewhite;
+                    max-width: 360px;
+                    border: 2px solid #FFFFFF;
                     border-radius: 100rem;
                 }
             }
@@ -26,7 +26,8 @@
                     };
                     padding-bottom: 10px;
                     position: relative;
-                    &:before{
+                    z-index: 2;
+                    &:after{
                         content: "";
                         position: absolute;
                         width: 55%;
