@@ -576,6 +576,13 @@ path:nth-child(9) {
   border-radius: 5px;
 }
 
+.MyProject .btn_navigation button:active {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  background-color: #bcb4b4;
+  color: #1e1e1e;
+}
+
 .MyProject .btn_navigation .btn-left {
   margin-right: 10px;
 }
@@ -620,6 +627,7 @@ path:nth-child(9) {
   padding: 40px 15px;
   background-color: #1e1e1e;
   text-align: center;
+  border-radius: 20px;
 }
 
 .Contact-title {
@@ -628,8 +636,79 @@ path:nth-child(9) {
 }
 
 .Contact-btn {
+  margin-top: 10px;
   padding: 12px 24px;
+  font-weight: bold;
   border: 0;
   border-radius: 12px;
+}
+
+.Contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Contact-info-Compo {
+  padding: 30px 40px;
+  width: 400px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.Contact-info-Compo .title {
+  text-transform: uppercase;
+}
+
+.Contact-info-Compo img {
+  margin: 0 auto;
+}
+
+.Contact-info-Compo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.Footer {
+  max-width: 1440px;
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 60px 0px 60px;
+}
+
+.Footer .desc {
+  font-size: 24px;
+}
+
+.Footer .name {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+}
+
+.Footer .name:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-color: antiquewhite;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.Footer .name span {
+  position: relative;
+  padding: 5px;
+  background-color: #1e1e1e;
+  z-index: 2;
 }
 /*# sourceMappingURL=style.css.map */

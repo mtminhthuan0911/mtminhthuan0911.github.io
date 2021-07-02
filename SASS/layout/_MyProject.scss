@@ -23,6 +23,11 @@
             border: 0;
             color: white;
             border-radius: 5px;
+            &:active{
+                transition: 0.5s all;
+                background-color: #bcb4b4;
+                color: #1e1e1e;
+            }
         }
         .btn-left{
             margin-right: 10px;

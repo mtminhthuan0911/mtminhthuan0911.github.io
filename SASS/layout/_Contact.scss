@@ -4,13 +4,34 @@
     padding: 40px 15px;
     background-color: #1e1e1e;
     text-align: center;
+    border-radius: 20px;
     &-title{
         font-size: 40px;
         font-weight: bold;
     }
     &-btn{
+        margin-top: 10px;
         padding: 12px 24px;
+        font-weight: bold;
         border: 0;
         border-radius: 12px;
+    }
+    &-info{
+        display: flex;
+        justify-content: space-between;
+        &-Compo{
+            padding: 30px 40px;
+            width: 400px;
+            transition: transform 0.5s;
+            .title{
+                text-transform: uppercase;
+            }
+            img{
+                margin: 0 auto;
+            }
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
     }
 }
