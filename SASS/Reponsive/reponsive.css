@@ -33,6 +33,9 @@
     text-align: center;
     margin: 0 auto;
   }
+  .AboutMe .container .About_Me-Content .title-desc {
+    padding-top: 20px;
+  }
   .AboutMe .container .About_Me-Content .Title {
     font-size: 35px;
   }

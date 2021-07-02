@@ -42,6 +42,9 @@ and (max-width : 736px){
                 &-Content{
                     text-align: center;
                     margin: 0 auto;
+                    .title-desc{
+                        padding-top: 20px;
+                    }
                     .Title{
                         font-size: 35px;
                         &:after{

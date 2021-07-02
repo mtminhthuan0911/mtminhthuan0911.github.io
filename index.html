@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="SASS/Style/style.css">
      <link rel="stylesheet" href="./SASS/Reponsive/reponsive.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./SASS/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./SASS/owlcarousel/assets/owl.theme.default.min.css">
+    
 </head>
 <body>
     <!-- Loading Page -->
@@ -67,6 +70,7 @@
                     <div class="About_Me">
                         <div data-aos="zoom-in-up" data-aos-offset="0"  data-aos-duration="500" data-aos-delay="200" data-aos-easing="ease-in-out" class="About_Me-info"><img class="Avartar" src="Media/avatar0.png" alt=""></div>
                             <div data-aos="zoom-in-up" data-aos-offset="0"  data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out" class="About_Me-Content">
+                                <p class="title-desc">Let me introduce myself !</p>
                                 <h1 class="Title"><span class="Title-z">About Me</span></h1>
                                 <p class="desc">
                                     I ‘ m Frontend Developer  .  I am currenyl working at Epal Solution as Fronten Developer , I love working with UI UX and Web Design  ,  I use Framework Reactjs for JS to create stunning UI and have a good UX for website
@@ -84,23 +88,77 @@
                     <div class="Skill_Webdesign">
                         <img class="Skill_Webdesign-icons" src="Media/webdesign.svg" alt="">
                         <p class="Skill_Webdesign-title">Web LandingPage</p>
-                        <p class="Skill_Webdesign-Title">I do ui/ux design for the website that helps website to get a unique look.</p>
+                        <p class="Skill_Webdesign-Title">Website introduces your projects, products or company to the world community, in a full and best way. </p>
                     </div>
                     <div class="Skill_Webdesign">
                         <img class="Skill_Webdesign-icons" src="Media/webdev.svg" alt="">
-                        <p class="Skill_Webdesign-title">Web Ecommerce</p>
-                        <p class="Skill_Webdesign-Title">I do ui/ux design for the website that helps website to get a unique look.</p>
+                        <p class="Skill_Webdesign-title">Web E-commerce</p>
+                        <p class="Skill_Webdesign-Title">Website according to SEO standards on e-commerce, will help you in managing your business model</p>
                     </div>
                     <div class="Skill_Webdesign">
                         <img class="Skill_Webdesign-icons" src="Media/Frame.svg" alt="">
-                        <p class="Skill_Webdesign-title">Web Product</p>
-                        <p class="Skill_Webdesign-Title">I do ui/ux design for the website that helps website to get a unique look.</p>
+                        <p class="Skill_Webdesign-title">Web Dasboard</p>
+                        <p class="Skill_Webdesign-Title">Dashboard will help you manage your resources in the best way with accurate statistics </p>
                     </div>
                 </div>
+            </section>
+            <section class="MyProject">
+                <p class="MyProject-title_desc">Some of my recent works</p>
+                <h2 class="MyProject-title_heading">Projects</h2>
+                <div class="btn_navigation">
+                    <button class="btn-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="btn-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="Media/a7945c6204505aa41326ad400307ca09.webp" alt="" srcset="">
+                            <div class="item-content">
+                                <p class="item-content-heading">Fruit Healthy</p>
+                                <p class="item-content-desc">I do ui/ux design for the website that helps website to get a unique look.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="Media/Thumbnail.png" alt="" srcset="">
+                            <div class="item-content">
+                                <p class="item-content-heading">Fruit Healthy</p>
+                                <p class="item-content-desc">I do ui/ux design for the website that helps website to get a unique look.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product"><img src="Media/opt2.png" alt="" srcset=""></div>
+                            <div class="item-content">
+                                <p class="item-content-heading">Fruit Healthy</p>
+                                <p class="item-content-desc">I do ui/ux design for the website that helps website to get a unique look.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="Media/6f2243624a306b6c6bb8d7cb0554c77c.webp" alt="" srcset="">
+                            <div class="item-content">
+                                <p class="item-content-heading">Fruit Healthy</p>
+                                <p class="item-content-desc">I do ui/ux design for the website that helps website to get a unique look.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Contact">
+                <p class="Contact-desc">Have a project in mind</p>
+                <p class="Contact-title">Let me help you</p>
+                <button class="Contact-btn">Contact Me</button>
             </section>
         </div>
     <script src="./JS/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./JS/jquery.min.js"></script>
+    <script src="./SASS/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./JS/Owl.js"></script>
     <script>
         AOS.init();
     </script>

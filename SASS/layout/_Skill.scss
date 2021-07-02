@@ -1,9 +1,7 @@
 .Skill{
     max-width: 1170px;
-    height: 100vh;
     margin: 0 auto;
-    padding: 50px 15px;
-    
+    padding: 100px 15px;
     &-desc{
         font: {
             size: 24px;
@@ -41,6 +39,8 @@
                     weight : 500;
                 };
             }
+
+            
         }
-    }
-}
+     }
+  }
