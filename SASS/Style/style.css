@@ -636,7 +636,6 @@ path:nth-child(9) {
 }
 
 .Contact-btn {
-  margin-top: 10px;
   padding: 12px 24px;
   font-weight: bold;
   border: 0;
@@ -663,6 +662,12 @@ path:nth-child(9) {
 
 .Contact-info-Compo .title {
   text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.Contact-info-Compo .contact {
+  color: white;
+  padding: 20px 0px;
 }
 
 .Contact-info-Compo img {
@@ -672,6 +677,11 @@ path:nth-child(9) {
 .Contact-info-Compo:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  font-weight: bold;
+}
+
+.Contact-info-Compo:hover .contact {
+  color: #0099ff;
 }
 
 .Footer {

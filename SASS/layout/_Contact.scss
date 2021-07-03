@@ -10,7 +10,6 @@
         font-weight: bold;
     }
     &-btn{
-        margin-top: 10px;
         padding: 12px 24px;
         font-weight: bold;
         border: 0;
@@ -25,12 +24,21 @@
             transition: transform 0.5s;
             .title{
                 text-transform: uppercase;
+                padding-bottom: 10px;
+            }
+            .contact{
+               color: white;
+               padding: 20px 0px;
             }
             img{
                 margin: 0 auto;
             }
             &:hover{
                 transform: scale(1.2);
+                font-weight: bold;
+                .contact{
+                    color: #0099ff;
+                }
             }
         }
     }
