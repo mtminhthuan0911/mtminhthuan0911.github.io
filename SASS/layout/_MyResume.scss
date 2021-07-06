@@ -1,0 +1,66 @@
+.My_Resume{
+    max-width: 1170px;
+    margin: 40px auto;
+    padding: 0 15px;
+    &-Title{
+        text-align: center;
+        .Title{
+            font: {
+                size: 40px;
+                weight:bold;
+            };
+            width: 300px;
+            margin: 0 auto;
+        }
+    }
+
+    &-Content{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        .Block{
+            border-radius: 7px;
+            border: 1px solid #FFFF;
+            padding: 15px;
+            max-width: 400px;
+            width: 350px;
+            transition: transform 0.5s;
+            &-title{
+                max-width: 50px;
+                font: {
+                    size: 28px;
+                    weight: bold
+                };
+                border-top: 2px solid #FFFF;
+            }
+            &-position,&-time{
+                padding: 20px 10px;
+            }
+            &-position{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            &-languages{
+                .Programming{
+                    padding: 20px 10px;
+                }
+            }
+            &:hover{
+                transition: 0.5s all;
+                box-shadow: 0 5px 70px black;
+                background-color: #FFFF;
+                color: #1e1e1e;
+                transform: translateY(-10px);
+                .Block-title{
+                    max-width: 50px;
+                    font: {
+                        size: 28px;
+                        weight: bold
+                    };
+                    border-top: 2px solid black;
+                }
+            }
+        }
+       
+    }
+}

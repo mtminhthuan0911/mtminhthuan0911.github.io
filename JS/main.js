@@ -18,7 +18,7 @@ let intro = document.querySelector('.intro');
            })
         })
 
-setTimeout (() => {
-    document.getElementById("Twriter").play();
-},8900)
+// setTimeout (() => {
+//     document.getElementById("Twriter").play();
+// },8900)
        

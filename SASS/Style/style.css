@@ -721,4 +721,81 @@ path:nth-child(9) {
   background-color: #1e1e1e;
   z-index: 2;
 }
+
+.My_Resume {
+  max-width: 1170px;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+.My_Resume-Title {
+  text-align: center;
+}
+
+.My_Resume-Title .Title {
+  font-size: 40px;
+  font-weight: bold;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.My_Resume-Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.My_Resume-Content .Block {
+  border-radius: 7px;
+  border: 1px solid #FFFF;
+  padding: 15px;
+  max-width: 400px;
+  width: 350px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.My_Resume-Content .Block-title {
+  max-width: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  border-top: 2px solid #FFFF;
+}
+
+.My_Resume-Content .Block-position, .My_Resume-Content .Block-time {
+  padding: 20px 10px;
+}
+
+.My_Resume-Content .Block-position {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.My_Resume-Content .Block-languages .Programming {
+  padding: 20px 10px;
+}
+
+.My_Resume-Content .Block:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-box-shadow: 0 5px 70px black;
+          box-shadow: 0 5px 70px black;
+  background-color: #FFFF;
+  color: #1e1e1e;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.My_Resume-Content .Block:hover .Block-title {
+  max-width: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  border-top: 2px solid black;
+}
 /*# sourceMappingURL=style.css.map */
