@@ -3,6 +3,12 @@
     display: none;
 }
 
+// .btn_dropdown{
+//     display: none;
+// }
+
+// .btn_drop{display: none;}
+
 @media only screen and (min-width : 375px) 
 and (max-width : 736px){
     /* Styles */
@@ -158,5 +164,14 @@ and (max-width : 736px){
             }
         }
     }
+    .My_Resume-Content{
+        display: block;
+        // padding: 20px;
+        .Block{
+            margin-bottom: 20px;
+        }
+      
+    }
 }
     
+

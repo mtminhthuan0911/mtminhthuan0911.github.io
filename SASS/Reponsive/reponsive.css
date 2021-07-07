@@ -147,5 +147,11 @@
     background-color: #1e1e1e;
     z-index: 2;
   }
+  .My_Resume-Content {
+    display: block;
+  }
+  .My_Resume-Content .Block {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=reponsive.css.map */
