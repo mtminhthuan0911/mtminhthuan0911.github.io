@@ -756,10 +756,10 @@ path:nth-child(9) {
   padding: 15px;
   max-width: 400px;
   width: 350px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .My_Resume-Content .Block-title {
@@ -783,20 +783,9 @@ path:nth-child(9) {
 }
 
 .My_Resume-Content .Block:hover {
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  -webkit-box-shadow: 0 5px 70px black;
-          box-shadow: 0 5px 70px black;
-  background-color: #FFFF;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  background-color: aliceblue;
   color: #1e1e1e;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-
-.My_Resume-Content .Block:hover .Block-title {
-  max-width: 50px;
-  font-size: 28px;
-  font-weight: bold;
-  border-top: 2px solid black;
 }
 /*# sourceMappingURL=style.css.map */
