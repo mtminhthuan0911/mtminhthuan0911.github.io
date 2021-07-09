@@ -1,6 +1,6 @@
 .My_Resume{
     max-width: 1170px;
-    margin: 40px auto;
+    margin: 100px auto;
     padding: 0 15px;
     &-Title{
         text-align: center;
@@ -25,7 +25,7 @@
             padding: 15px;
             max-width: 400px;
             width: 350px;
-            transition: transform 1s;
+            transition: transform 0.5s;
             &-title{
                 max-width: 50px;
                 font: {
@@ -48,9 +48,13 @@
             }
         }
         .Block:hover{
-            transform: scale(1.5);
+            transition: 1s all;
+            transform: translateY(-10px);
             background-color: aliceblue;
             color: #1e1e1e;
+            .Block-title{
+                border-top: 2px solid black;
+            }
         }
        
     }

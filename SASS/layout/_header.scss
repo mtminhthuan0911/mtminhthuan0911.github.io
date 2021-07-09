@@ -63,7 +63,7 @@
                     margin: 20px auto;
                     opacity: 0;
                     animation: scale 2s linear forwards;
-                    animation-delay: 7.5s;
+                    animation-delay: 6.5s;
                 }
             }
             &-content{
@@ -72,18 +72,18 @@
                 text-align: center;
                 &-title{ 
                     font: {
-                        size:50px;
+                        size:38px;
                     };
                     span{
                         font-weight: bold;
                     }
-                    margin: 0 auto;
+                    margin: 20px auto;
                     opacity: 0;
                     overflow: hidden;
                     white-space: nowrap;
                     animation: animate 1.8s linear forwards;
                     border-right: 4px solid #FFFFFF;
-                    animation-delay: 9s;
+                    animation-delay: 7s;
                     
                 }
 
@@ -98,13 +98,13 @@
                         font-family: 'Roboto Mono';
                         
                     }
-                    margin: 0 auto;
+                    margin: 20px auto;
                     opacity: 0;
                     overflow: hidden;
                     white-space: nowrap;
                     animation: animate 1.8s linear forwards;
                     border-right: 4px solid #FFFFFF;
-                    animation-delay: 10s;
+                    animation-delay: 8s;
                 }
                 @keyframes animate {
 
@@ -121,9 +121,9 @@
                 }
                 &-desc{
                    
-                    margin: 0 auto;
+                    margin: 20px auto;
                     font: {
-                        size:50px;
+                        size:38px;
                     };
                    
                     span{
@@ -136,7 +136,7 @@
                     white-space: nowrap;
                     animation: animate 1.8s linear forwards;
                     border-right: 4px solid #FFFFFF;
-                    animation-delay: 11s;
+                    animation-delay: 9s;
                 }
                 
             }
