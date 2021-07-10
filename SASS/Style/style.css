@@ -600,6 +600,7 @@ path:nth-child(9) {
   border-radius: 20px;
   margin: 0 auto;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 
 .MyProject .container .item {
@@ -619,6 +620,13 @@ path:nth-child(9) {
   font-size: 18px;
   font-weight: bold;
   color: white;
+}
+
+.MyProject .container .item-content-desc {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .Contact {
