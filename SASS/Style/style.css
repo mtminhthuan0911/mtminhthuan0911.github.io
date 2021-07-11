@@ -246,6 +246,28 @@ path:nth-child(9) {
   margin: 0 auto;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background: #1e1e1e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 100rem;
+  background: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  height: 50px;
+}
+
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -807,5 +829,45 @@ path:nth-child(9) {
 
 .My_Resume-Content .Block:hover .Block-title {
   border-top: 2px solid black;
+}
+
+.About {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.About img {
+  max-width: 500px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.About-Info {
+  max-width: 500px;
+  width: 450px;
+  line-height: 40px;
+}
+
+.About-Info .txt {
+  font-size: 20px;
+  z-index: 2;
+}
+
+.About-Info .txt span {
+  background-color: #1e1e1e;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.About-Info .txtHeading {
+  font-size: 30px;
+  margin: 20px 0px;
 }
 /*# sourceMappingURL=style.css.map */

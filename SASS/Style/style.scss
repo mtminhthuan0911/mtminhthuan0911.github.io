@@ -204,6 +204,33 @@ path:nth-child(9){
     margin: 0 auto;
 }
 
+::-webkit-scrollbar {
+    width:10px;
+    height: 10px;
+ 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ 
+  border-radius : 50px;
+   
+   background: #1e1e1e; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius : 100rem;
+   background: white; 
+   
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ 
+  height : 50px;
+}
+
 @import '../layout/header';
 @import '../layout/AboutMe';
 @import '../layout/Skill';
@@ -211,3 +238,4 @@ path:nth-child(9){
 @import '../layout/Contact';
 @import '../layout/Footer';
 @import '../layout/MyResume';
+@import '../layout/About';
