@@ -37,7 +37,7 @@ and (max-width : 736px){
                     position: relative;
                     opacity: 0;
                     animation: scale 2s linear forwards;
-                    animation-delay: 13s;
+                    animation-delay: 8s;
                     img{
                         position: absolute;
                         top: 50%;
@@ -62,7 +62,7 @@ and (max-width : 736px){
                         font-size: 20px;
                     }
                     &-name{
-                        font-size: 30px;
+                        font-size: 40px;
                     }
                 }
             }
@@ -145,7 +145,6 @@ and (max-width : 736px){
     }
     .Footer{
         .name{
-            font-size: 30px;
             &:after{
                 content: "";
                 position: absolute;
@@ -158,9 +157,10 @@ and (max-width : 736px){
             }
             span{
                 position: relative;
-                padding: 5px;
+                padding: 2px;
                 background-color: #1e1e1e;
                 z-index: 2;
+                font-size: 30px;
             }
         }
     }

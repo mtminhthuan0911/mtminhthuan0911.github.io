@@ -24,8 +24,8 @@
     opacity: 0;
     -webkit-animation: scale 2s linear forwards;
             animation: scale 2s linear forwards;
-    -webkit-animation-delay: 13s;
-            animation-delay: 13s;
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
   }
   .wrapper .container .header .scroll img {
     position: absolute;
@@ -63,7 +63,7 @@
     font-size: 20px;
   }
   .wrapper .container .header-content-name {
-    font-size: 30px;
+    font-size: 40px;
   }
   .AboutMe {
     height: auto;
@@ -127,9 +127,6 @@
     width: 300px;
     margin: 0 auto;
   }
-  .Footer .name {
-    font-size: 30px;
-  }
   .Footer .name:after {
     content: "";
     position: absolute;
@@ -143,9 +140,10 @@
   }
   .Footer .name span {
     position: relative;
-    padding: 5px;
+    padding: 2px;
     background-color: #1e1e1e;
     z-index: 2;
+    font-size: 30px;
   }
   .My_Resume-Content {
     display: block;
