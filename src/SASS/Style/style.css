@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Poppins';
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins';
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: #262626;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper_full {
+  width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 40px 15px;
+}
+
+.btn {
+  padding: 7px 15px;
+  border: 0;
+  background: none;
+  border-radius: 7px;
+}
+
+.btn:active {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.primary {
+  background-color: #0099ff;
+  color: white;
+  font-weight: 500;
+}
+
+.second {
+  background-color: coral;
+  color: white;
+  font-weight: 500;
+}
+
+.second:disabled {
+  cursor: no-drop;
+  background-color: rgba(255, 127, 80, 0.521);
+}
+
+.txtHeading {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.txtHeading2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.txtHeading3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #1e1e1e;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+}
+
+.desc {
+  color: #798497;
+}
+
+.logoPage {
+  margin: 0 auto;
+  width: 150px;
+}
+
+.Block {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 900px;
+  line-height: 1.5;
+  border-radius: 17px;
+  border: 4px solid white;
+}
+
+.Block .content {
+  width: 500px;
+  padding-top: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.Block .content-tasklist {
+  width: 100%;
+  color: white;
+}
+
+.Block .content-tasklist .Component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid white;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  border-radius: 5px;
+  padding: 7px 10px;
+  margin: 15px;
+}
+
+.Block .content-tasklist .Component:hover {
+  border: 3px solid #0099ff;
+}
+
+.Block .content-tasklist .Component .process {
+  margin-left: auto;
+}
+
+.Block .content-tasklist .Component .process .Icons {
+  margin-left: 10px;
+  text-align: center;
+  padding: 3px 5px;
+  border: 0;
+  background: none;
+  color: white;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.Block .content-tasklist .Component .process .Icons i {
+  font-size: 16px;
+}
+
+.Block .content-tasklist .Component .process .Icons:hover {
+  border-radius: 4px;
+  background-color: #0099ff;
+  color: white;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.Block .content-tasklist .Component .process .Icons:active {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.Block .content-tasklist .Component .process .green {
+  background-color: #0099ff;
+}
+
+.Block .list {
+  width: 500px;
+  padding: 20px 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.Block .list-data {
+  margin-top: 20px;
+  position: relative;
+}
+
+.Block .list-data label {
+  font-size: 14px;
+}
+
+.Block .list-data .YourTask {
+  width: 100%;
+  height: 50px;
+  padding: 7px 20px;
+  border-radius: 7px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.Block .list-data .YourTask:focus {
+  border: 2px solid #0099ff;
+  outline: none;
+}
+
+.Block .list-data label {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+  left: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  color: #797676;
+}
+
+.Block .list-data .YourTask:not(:placeholder-shown) + label,
+.Block .list-data .YourTask:focus + label {
+  top: 0px;
+  padding: 0 10px;
+  display: inline-block;
+  background-color: white;
+  outline: none;
+  color: #0099ff;
+}
+
+.Block .list .btn_process {
+  padding: 20px 40px;
+}
+
+.Block .list .btn_process button {
+  margin-left: 20px;
+}
+
+.Block .list .btn_process button i {
+  margin-right: 10px;
+}
+
+.Block .list .txtNoti {
+  font-size: 14px;
+  color: red;
+  text-align: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+  /* Styles */
+  .flex {
+    display: block;
+  }
+  .Block {
+    width: 100%;
+  }
+  .Block .content {
+    width: 100%;
+  }
+  .Block .list {
+    width: 100%;
+  }
+  .Block .list .btn_process {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 22px 27px;
+  }
+}
+
+@media only screen and (min-device-width: 374px) and (max-device-height: 667px) {
+  /* Styles */
+  .flex {
+    display: block;
+  }
+  .Block {
+    width: 100%;
+  }
+  .Block .content {
+    width: 100%;
+  }
+  .Block .list {
+    width: 100%;
+  }
+  .Block #txtHeading3 {
+    font-size: 13px !important;
+  }
+  .Block .btn_process {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 22px 9px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
