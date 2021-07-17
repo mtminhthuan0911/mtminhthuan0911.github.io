@@ -30,6 +30,7 @@ body{
     background-color: #262626;
     color: #FFFFFF;
     overflow-x: hidden;
+    cursor: none;
     /* Create the parallax scrolling effect */
 }
 body.acc{
@@ -227,6 +228,61 @@ path:nth-child(9){
     border-radius : 100rem;
    background: white; 
    
+}
+
+//scroll top : 
+
+.scrollTop {
+    position: fixed;
+    bottom: 800px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF url('/Media/Vector.svg');
+    box-shadow: 0 0px 10px #FFFFFF;
+    border-radius: 50%;
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 4;
+    visibility: hidden;
+    opacity: 0;
+    &:hover{
+        transform: translateY(-20px);
+    }
+    // &::before{
+    //     content: 'Top';
+    //     top: 50%;
+    //     left: 50%;
+    //     position: absolute;
+    //     transform: translate(-50%,-50%);
+    //     font: {
+    //         size: 24px;
+    //         weight : bold;
+    //     };
+    //     color: #1e1e1e;
+    // }
+   
+}
+.active{
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
+#cursor{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    transition: 0.1s;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 99999999999;
+    pointer-events: none;
 }
 
 /* Handle on hover */

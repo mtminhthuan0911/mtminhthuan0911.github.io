@@ -28,6 +28,7 @@ body {
   background-color: #262626;
   color: #FFFFFF;
   overflow-x: hidden;
+  cursor: none;
   /* Create the parallax scrolling effect */
 }
 
@@ -265,6 +266,54 @@ path:nth-child(9) {
 ::-webkit-scrollbar-thumb {
   border-radius: 100rem;
   background: white;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 800px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF url("/Media/Vector.svg");
+  -webkit-box-shadow: 0 0px 10px #FFFFFF;
+          box-shadow: 0 0px 10px #FFFFFF;
+  border-radius: 50%;
+  background-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 4;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.scrollTop:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.active {
+  bottom: 40px;
+  visibility: visible;
+  opacity: 1;
+}
+
+#cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 99999999999;
+  pointer-events: none;
 }
 
 /* Handle on hover */
@@ -827,7 +876,7 @@ path:nth-child(9) {
   transition: 1s all;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-  background-color: aliceblue;
+  background-color: rgba(240, 248, 255, 0.822);
   color: #1e1e1e;
 }
 

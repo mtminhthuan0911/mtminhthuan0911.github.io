@@ -1,19 +1,24 @@
+window.addEventListener('scroll', () => {
+    var scroll = document.querySelector('.scrollTop');
+    scroll.classList.toggle("active", window.scrollY > 1000)
+})
 
 
-function Exper() {
-    document.getElementById("ex").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.btn_drop')) {
-      var dropdowns = document.getElementsByClassName("Block");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
+function totop(){
+  window.scrollTo({
+    top : 0,
+    behavior:'smooth',
+    
+  })
+  console.log('abc')
+}
+
+var cursor = document.getElementById('cursor');
+document.addEventListener('mousemove', function(e){
+    var x = e.clientX;
+    var y = e.clientY;
+    cursor.style.left = x + "px";
+    cursor.style.top = y + "px";
+
+
+})
