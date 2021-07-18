@@ -234,7 +234,7 @@ path:nth-child(9){
 
 .scrollTop {
     position: fixed;
-    bottom: 800px;
+    top: 500px;
     right: 40px;
     width: 60px;
     height: 60px;
@@ -267,7 +267,7 @@ path:nth-child(9){
    
 }
 .active{
-    bottom: 40px;
+    
     visibility: visible;
     opacity: 1;
 }
@@ -276,6 +276,7 @@ path:nth-child(9){
     position: fixed;
     width: 20px;
     height: 20px;
+    background-color: #1e1e1e;
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     transition: 0.1s;
@@ -283,6 +284,9 @@ path:nth-child(9){
     border-radius: 50%;
     z-index: 99999999999;
     pointer-events: none;
+    &:hover{
+        background-color: #0099ff;
+    }
 }
 
 /* Handle on hover */

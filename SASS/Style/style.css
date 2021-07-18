@@ -270,7 +270,7 @@ path:nth-child(9) {
 
 .scrollTop {
   position: fixed;
-  bottom: 800px;
+  top: 500px;
   right: 40px;
   width: 60px;
   height: 60px;
@@ -295,7 +295,6 @@ path:nth-child(9) {
 }
 
 .active {
-  bottom: 40px;
   visibility: visible;
   opacity: 1;
 }
@@ -304,6 +303,7 @@ path:nth-child(9) {
   position: fixed;
   width: 20px;
   height: 20px;
+  background-color: #1e1e1e;
   border: 2px solid #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -314,6 +314,10 @@ path:nth-child(9) {
   border-radius: 50%;
   z-index: 99999999999;
   pointer-events: none;
+}
+
+#cursor:hover {
+  background-color: #0099ff;
 }
 
 /* Handle on hover */
@@ -352,6 +356,7 @@ path:nth-child(9) {
 }
 
 .wrapper .container .Navigation-menu-item-link {
+  cursor: none;
   color: #FFFFFF;
   font-size: 20px;
   position: relative;
@@ -553,7 +558,7 @@ path:nth-child(9) {
   border: 2px solid #FFFFFF;
   border-radius: 12px;
   color: #FFFFFF;
-  cursor: pointer;
+  cursor: none;
   background: none;
   font-size: 18px;
   font-weight: bold;
@@ -675,7 +680,7 @@ path:nth-child(9) {
   border-radius: 20px;
   margin: 0 auto;
   padding-bottom: 10px;
-  cursor: pointer;
+  cursor: none;
 }
 
 .MyProject .container .item {
@@ -737,6 +742,7 @@ path:nth-child(9) {
 .Contact-info-Compo {
   padding: 30px 40px;
   width: 400px;
+  cursor: none;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -765,6 +771,7 @@ path:nth-child(9) {
 
 .Contact-info-Compo:hover .contact {
   color: #0099ff;
+  cursor: none;
 }
 
 .Footer {
@@ -829,7 +836,7 @@ path:nth-child(9) {
 }
 
 .My_Resume-Content {
-  cursor: pointer;
+  cursor: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

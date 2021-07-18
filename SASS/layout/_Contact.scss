@@ -21,6 +21,7 @@
         &-Compo{
             padding: 30px 40px;
             width: 400px;
+            cursor: none;
             transition: transform 0.5s;
             .title{
                 text-transform: uppercase;
@@ -38,6 +39,7 @@
                 font-weight: bold;
                 .contact{
                     color: #0099ff;
+                    cursor: none;
                 }
             }
         }
