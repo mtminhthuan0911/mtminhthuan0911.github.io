@@ -332,13 +332,35 @@ path:nth-child(9) {
 .wrapper {
   width: 100%;
   height: 100vh;
+  background-image: url("../../Media/background1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   scroll-snap-align: start;
+}
+
+.wrapper .overlay {
+  width: 100%;
+  height: 120vh;
+  position: absolute;
+  background-color: #1e1e1e3b;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 .wrapper .container {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.wrapper .container .Navigation {
+  position: relative;
+  z-index: 4;
 }
 
 .wrapper .container .Navigation-menu {
@@ -403,6 +425,11 @@ path:nth-child(9) {
   100% {
     opacity: 1;
   }
+}
+
+.wrapper .container .header {
+  position: relative;
+  z-index: 3;
 }
 
 .wrapper .container .header-logoPage img {
