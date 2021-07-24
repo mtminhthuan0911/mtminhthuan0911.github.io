@@ -810,6 +810,11 @@ path:nth-child(9) {
   background-color: #1e1e1e;
   text-align: center;
   padding: 60px 0px 60px;
+  background-image: url("/Media/background1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .Footer .container {
@@ -830,22 +835,9 @@ path:nth-child(9) {
   position: relative;
 }
 
-.Footer .container .name:after {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 3px;
-  background-color: antiquewhite;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .Footer .container .name span {
   position: relative;
   padding: 5px;
-  background-color: #1e1e1e;
   z-index: 2;
 }
 
